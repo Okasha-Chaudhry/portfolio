@@ -1,0 +1,40 @@
+import type { Skill } from "@/types";
+
+export const skills: Skill[] = [
+  { name: "Python", category: "languages" },
+  { name: "TypeScript", category: "languages" },
+  { name: "JavaScript", category: "languages" },
+  { name: "C#", category: "languages" },
+  { name: "Dart", category: "languages" },
+  { name: "C++", category: "languages" },
+  { name: "SQL", category: "languages" },
+  { name: "React", category: "frontend" },
+  { name: "Next.js", category: "frontend" },
+  { name: "Tailwind CSS", category: "frontend" },
+  { name: "Framer Motion", category: "frontend" },
+  { name: "Node.js", category: "backend" },
+  { name: "Express", category: "backend" },
+  { name: "FastAPI", category: "backend" },
+  { name: "ASP.NET Core", category: "backend" },
+  { name: "REST APIs", category: "backend" },
+  { name: "Flutter", category: "mobile" },
+  { name: "Firebase", category: "mobile" },
+  { name: "MongoDB", category: "database" },
+  { name: "SQL Server", category: "database" },
+  { name: "Cloud Firestore", category: "database" },
+  { name: "ChromaDB", category: "database" },
+  { name: "Git", category: "tools" },
+  { name: "GitHub", category: "tools" },
+  { name: "Vercel", category: "tools" },
+  { name: "Stripe", category: "tools" },
+  { name: "Cloudinary", category: "tools" },
+];
+
+export const skillCategories: { key: Skill["category"]; label: string }[] = [
+  { key: "languages", label: "Languages" },
+  { key: "frontend", label: "Frontend" },
+  { key: "backend", label: "Backend" },
+  { key: "mobile", label: "Mobile" },
+  { key: "database", label: "Databases" },
+  { key: "tools", label: "Tools & Services" },
+];

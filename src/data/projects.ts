@@ -2,6 +2,35 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    slug: "restaurant-pos",
+    title: "Restaurant POS",
+    tagline: "Offline-first desktop POS running live in a restaurant",
+    category: "desktop",
+    problem:
+      "A fast-food restaurant client needed billing, order management, and instant receipt printing that keeps working with zero internet dependency - cloud POS systems stop the business the moment the connection drops.",
+    solution:
+      "A fully offline Windows desktop POS built with Electron and React: staff log in with PINs, take orders, and print thermal receipts instantly, with every record stored in a local SQLite database. The restaurant uses it in production every day.",
+    architecture:
+      "Electron desktop shell with a React 19 + TypeScript frontend. Local SQLite database through better-sqlite3 with Drizzle ORM for type-safe queries. ESC/POS thermal receipt printing over USB, PIN-based staff authentication, and a device-locked licensing system built on HMAC-SHA256 machine signatures.",
+    technologies: ["Electron", "React", "TypeScript", "SQLite", "Drizzle ORM", "Node.js"],
+    features: [
+      "Complete order and billing workflow designed for fast-food speed",
+      "Instant thermal receipt printing (ESC/POS over USB)",
+      "Works fully offline - no internet required at any point",
+      "PIN-based staff authentication",
+      "Device-locked licensing so each installation is tied to one machine",
+    ],
+    challenges: [
+      "Debugging USB thermal printer port enumeration on Windows for reliable receipt printing",
+      "Designing a licensing system that locks the app to a specific machine without any online activation server",
+    ],
+    lessonsLearned: [
+      "Shipping to a real client means handling the messy last 10 percent: printers, installers, and licensing",
+      "Offline-first architecture forces cleaner data design than cloud-first thinking",
+    ],
+    featured: true,
+  },
+  {
     slug: "repomind",
     title: "RepoMind",
     tagline: "Semantic code search engine for GitHub repositories",
@@ -28,6 +57,7 @@ export const projects: Project[] = [
       "How a retrieval pipeline (chunking, embeddings, vector search) works end to end",
       "Local embedding models make semantic search possible with zero API cost",
     ],
+    imageUrl: "/projects/repomind.png",
     githubUrl: "https://github.com/Okasha-Chaudhry/RepoMind",
     featured: true,
   },
@@ -59,6 +89,7 @@ export const projects: Project[] = [
       "Structuring a production MERN codebase with separate models, routes, and middleware layers",
       "Third-party integrations (payments, image CDN, email) each need their own error handling strategy",
     ],
+    imageUrl: "/projects/beauty-salon.png",
     githubUrl: "https://github.com/Okasha-Chaudhry/beauty-salon-platform",
     liveUrl: "https://beauty-salon-platform.vercel.app",
     featured: true,

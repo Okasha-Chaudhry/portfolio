@@ -24,13 +24,6 @@ export function Hero() {
       <div aria-hidden="true" className="pointer-events-none absolute -top-32 right-0 h-125 w-125 rounded-full bg-accent/15 blur-3xl" />
       <div aria-hidden="true" className="pointer-events-none absolute bottom-0 -left-32 h-100 w-100 rounded-full bg-accent/10 blur-3xl" />
       <div className="relative mx-auto w-full max-w-5xl px-6 pt-24 pb-16">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-xs font-medium text-muted">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-60" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
-          </span>
-          Available for freelance and internships
-        </motion.div>
 
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.5 }} className="mb-4 flex items-center gap-2 text-sm text-muted">
           <MapPin size={14} aria-hidden="true" />

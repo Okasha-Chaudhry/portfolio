@@ -10,7 +10,7 @@ export function Projects() {
     <section id="projects" className="py-24">
       <div className="mx-auto max-w-5xl px-6">
         <SectionTitle eyebrow="Work" title="Featured Projects" />
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {featuredProjects.map((project, i) => (
             <motion.div key={project.slug} initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ delay: i * 0.1, duration: 0.5, ease: "easeOut" }}>
               <ProjectCard project={project} />

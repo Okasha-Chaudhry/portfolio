@@ -1,3 +1,5 @@
+import type { IconType } from "react-icons";
+
 export type ProjectCategory = "ai" | "web" | "desktop" | "mobile";
 
 export interface Project {
@@ -20,6 +22,7 @@ export interface Project {
 
 export interface Skill {
   name: string;
+  icon?: IconType;
   category: "languages" | "frontend" | "backend" | "mobile" | "database" | "tools";
 }
 

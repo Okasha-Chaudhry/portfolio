@@ -18,7 +18,7 @@ export function Skills() {
                 <h3 className="mb-4 font-display text-sm font-semibold uppercase tracking-widest text-muted">{cat.label}</h3>
                 <ul className="flex flex-wrap gap-2">
                   {items.map((skill) => (
-                    <li key={skill.name} className="rounded-lg border border-border bg-surface px-3 py-1.5 text-sm transition-colors hover:border-accent/50">{skill.name}</li>
+                    <li key={skill.name} className="flex items-center gap-2 rounded-lg border border-border bg-surface px-3 py-1.5 text-sm transition-colors hover:border-accent/50">{skill.icon && <skill.icon size={16} aria-hidden="true" className="text-muted" />}{skill.name}</li>
                   ))}
                 </ul>
               </motion.div>

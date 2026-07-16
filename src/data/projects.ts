@@ -13,6 +13,7 @@ export const projects: Project[] = [
     architecture:
       "Electron desktop shell with a React 19 + TypeScript frontend. Local SQLite database through better-sqlite3 with Drizzle ORM for type-safe queries. ESC/POS thermal receipt printing over USB, PIN-based staff authentication, and a device-locked licensing system built on HMAC-SHA256 machine signatures.",
     technologies: ["Electron", "React", "TypeScript", "SQLite", "Drizzle ORM", "Node.js"],
+    imageUrl: "/projects/restaurant-pos.png",
     features: [
       "Complete order and billing workflow designed for fast-food speed",
       "Instant thermal receipt printing (ESC/POS over USB)",

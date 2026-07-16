@@ -53,6 +53,7 @@ export interface Certification {
 
 export interface SocialLink {
   label: string;
+  icon?: IconType;
   url: string;
 }
 

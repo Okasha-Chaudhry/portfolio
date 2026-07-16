@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, ArrowUpRight } from "lucide-react";
+import { Mail } from "lucide-react";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { siteConfig } from "@/data/site";
 
@@ -18,9 +18,8 @@ export function Contact() {
               {siteConfig.email}
             </a>
             {siteConfig.socials.map((social) => (
-              <a key={social.label} href={social.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-full border border-border px-5 py-3 text-sm font-medium transition-colors hover:bg-surface">
-                {social.label}
-                <ArrowUpRight size={14} aria-hidden="true" />
+              <a key={social.label} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.label} title={social.label} className="flex h-12 w-12 items-center justify-center rounded-full border border-border transition-colors hover:border-accent/50 hover:bg-surface">
+                {social.icon && <social.icon size={20} aria-hidden="true" />}
               </a>
             ))}
           </div>

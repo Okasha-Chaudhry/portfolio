@@ -1,4 +1,5 @@
 import type { SiteConfig } from "@/types";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const siteConfig: SiteConfig = {
   name: "Okasha Chaudhry",
@@ -10,7 +11,7 @@ export const siteConfig: SiteConfig = {
   email: "okashachaudhry01@gmail.com",
   resumeUrl: "/resume.pdf",
   socials: [
-    { label: "GitHub", url: "https://github.com/Okasha-Chaudhry" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/okasha-chaudhry-361614354/" },
+    { label: "GitHub", url: "https://github.com/Okasha-Chaudhry", icon: FaGithub },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/okasha-chaudhry-361614354/", icon: FaLinkedin },
   ],
 };

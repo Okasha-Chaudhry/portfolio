@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export const siteConfig: SiteConfig = {
   name: "Okasha Chaudhry",
   role: "Computer Scientist",
-  tagline: "Building production-grade AI, web, desktop, and mobile products.",
+  tagline: "Building production-grade AI, web, desktop, and mobile software.",
   description:
     "Computer Science student specializing in AI/ML, MERN, .NET, and Flutter. I ship real products for real clients.",
   location: "Rawalpindi, Pakistan",
